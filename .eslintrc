@@ -1,0 +1,282 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": [
+      "tsconfig.json"
+    ],
+    "createDefaultProgram": true
+  },
+  "plugins": [
+    "@angular-eslint/eslint-plugin",
+    "@typescript-eslint",
+    "simple-import-sort"
+  ],
+  "rules": {
+    "@angular-eslint/component-selector": [
+      "error",
+      {
+        "prefix": "app",
+        "style": "kebab-case",
+        "type": "element"
+      }
+    ],
+    "@angular-eslint/directive-selector": [
+      "error",
+      {
+        "prefix": "app",
+        "style": "camelCase",
+        "type": "attribute"
+      }
+    ],
+    "@angular-eslint/no-host-metadata-property": "error",
+    "@angular-eslint/no-input-rename": "error",
+    "@angular-eslint/no-inputs-metadata-property": "error",
+    "@angular-eslint/no-output-on-prefix": "off",
+    "@angular-eslint/no-output-rename": "error",
+    "@angular-eslint/no-outputs-metadata-property": "error",
+    "@angular-eslint/use-pipe-transform-interface": "error",
+    "@typescript-eslint/consistent-type-definitions": "error",
+    "@typescript-eslint/typedef": [
+      "error",
+      {
+        "parameter": true,
+        "propertyDeclaration": true,
+        "variableDeclaration": true,
+        "memberVariableDeclaration": true,
+      }
+    ],
+    "@typescript-eslint/dot-notation": "off",
+    "@typescript-eslint/explicit-member-accessibility": [
+      "error",
+      {
+        "accessibility": "explicit",
+        "overrides": {
+          "constructors": "off",
+        }
+      }
+    ],
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "semi",
+          "requireLast": true
+        },
+        "singleline": {
+          "delimiter": "semi",
+          "requireLast": false
+        }
+      }
+    ],
+    "@typescript-eslint/member-ordering": [
+      "error",
+      {
+        "default": [
+          "public-field",
+          "protected-field",
+          "private-field",
+          "public-method",
+          "protected-method",
+          "private-method"
+        ]
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      // {
+      //   "selector": ["variableLike", "memberLike", "property", "method"],
+      //   "leadingUnderscore": "allow",
+      //   "format": ["camelCase", "UPPER_CASE"]
+      // },
+      {
+        "selector": ["typeLike"],
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": ["enumMember"],
+        "format": ["UPPER_CASE"]
+      },
+      {
+        "selector": "variable",
+        "modifiers": ["global"],
+        "format": ["UPPER_CASE", "camelCase"]
+      },
+      {
+        "selector": ["property"],
+        "modifiers": ["static"],
+        "format": ["UPPER_CASE", "camelCase"]
+      }
+    ],
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-inferrable-types": [
+      "off",
+      {
+        "ignoreParameters": true
+      }
+    ],
+    "@typescript-eslint/no-misused-new": "error",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-shadow": [
+      "error",
+      {
+        "hoist": "all"
+      }
+    ],
+    "@typescript-eslint/no-unused-expressions": "off",
+    "no-unused-vars": [
+      "warn",
+      {
+        "ignoreRestSiblings": true,
+      }
+    ],
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      {
+        "variables": true,
+        "functions": false,
+        "classes": false
+      }
+    ],
+    "@typescript-eslint/prefer-function-type": "error",
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true,
+      }
+    ],
+    "@typescript-eslint/quotes": [
+      "error",
+      "single"
+    ],
+    "@typescript-eslint/semi": [
+      "error",
+      "always"
+    ],
+    "@typescript-eslint/type-annotation-spacing": "error",
+    "@typescript-eslint/unified-signatures": "error",
+    "arrow-body-style": ["warn", "as-needed"],
+    "brace-style": [
+      "error",
+      "1tbs"
+    ],
+    "comma-dangle": [
+      "warn",
+      {
+        "objects": "always-multiline",
+        "arrays": "always-multiline",
+        "functions": "never",
+        "imports": "only-multiline"
+      }
+    ],
+    "constructor-super": "error",
+    "curly": "error",
+    "eol-last": "error",
+    "eqeqeq": [
+      "error",
+      "smart"
+    ],
+    "guard-for-in": "error",
+    "id-blacklist": "off",
+    "id-match": "off",
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "max-len": [
+      "off",
+      {
+        "code": 200
+      }
+    ],
+    "no-bitwise": "error",
+    "no-caller": "error",
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "dir",
+          "timeLog",
+          "assert",
+          "clear",
+          "count",
+          "countReset",
+          "group",
+          "groupEnd",
+          "table",
+          "dirxml",
+          "error",
+          "groupCollapsed",
+          "Console",
+          "profile",
+          "profileEnd",
+          "timeStamp",
+          "context"
+        ]
+      }
+    ],
+    "no-debugger": "error",
+    "no-duplicate-case": "error",
+    "no-duplicate-imports": "error",
+    "no-empty": "off",
+    "no-eval": "error",
+    "no-fallthrough": "error",
+    "no-new-wrappers": "error",
+    "no-redeclare": "error",
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          "^lodash$",
+          "^rxjs/internal/.*$"
+        ]
+      }
+    ],
+    "no-throw-literal": "error",
+    "no-trailing-spaces": "warn",
+    "keyword-spacing": "error",
+    "simple-import-sort/imports": "error",
+    "space-before-blocks": "error",
+    "no-undef-init": "error",
+    "no-underscore-dangle": "off",
+    "no-unused-labels": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "radix": "error",
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "markers": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["projects/**/*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "rules": {
+        "comma-spacing": "error",
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [
+              ["^@angular*"],
+              ["^@ngxs*"],
+              ["^rxjs"],
+              ["^@*"],
+              ["^@src*"],
+              ["^@common*"],
+              ["^\\."],
+              ["^"]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

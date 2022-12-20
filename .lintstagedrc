@@ -1,0 +1,6 @@
+{
+  "projects/**/*.ts": [
+    "prettier --config ./.prettierc --write",
+    "./node_modules/.bin/eslint --init"
+  ]
+}
