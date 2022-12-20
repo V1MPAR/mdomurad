@@ -1,0 +1,25 @@
+@import '../../../styles';
+
+:host {
+  min-height: 100vh;
+  height: 100%;
+}
+
+header, main, footer {
+  padding: 20px 50px;
+  font: 14px $main-font;
+  color: #fff;
+}
+
+header {
+  h1 {
+    margin: 0;
+    font-weight: 700;
+  }
+}
+
+footer {
+  p {
+    margin: 0;
+  }
+}
