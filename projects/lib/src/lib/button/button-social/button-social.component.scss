@@ -1,0 +1,26 @@
+@import '../../../../../app/src/styles';
+
+:host {
+  display: flex;
+
+  &::ng-deep {
+    button, a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $accent;
+      color: #fff;
+      height: 32px;
+      width: 32px;
+      font-size: 14px;
+      font-family: $main-font;
+      font-weight: 500;
+      outline: none;
+      border: none;
+      appearance: none;
+      -moz-appearance: none;
+      cursor: pointer;
+      transition: opacity .2s ease-in-out;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
+import { ButtonModule } from "../../../lib/src/lib/button/button.module";
 
 @NgModule({
   declarations: [
@@ -12,10 +13,11 @@ import { MainLayoutComponent } from './layouts/main-layout/main-layout.component
     HomepageComponent,
     MainLayoutComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ButtonModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

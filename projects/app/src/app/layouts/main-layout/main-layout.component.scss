@@ -12,10 +12,30 @@ header, main, footer {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgba(37, 56, 96, 0.8);
   h1 {
     margin: 0;
     font-weight: 700;
+    color: $accent;
+    span {
+      color: #fff;
+    }
   }
+  div {
+    display: flex;
+    column-gap: 15px;
+  }
+}
+
+main {
+  height: 120vh;
 }
 
 footer {
