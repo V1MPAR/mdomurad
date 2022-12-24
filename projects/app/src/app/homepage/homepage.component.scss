@@ -1,0 +1,10 @@
+.hero {
+  display: flex;
+  align-items: center;
+  column-gap: 200px;
+  .buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+}

@@ -6,7 +6,7 @@
 }
 
 header, main, footer {
-  padding: 20px 50px;
+  padding: 20px 140px;
   font: 14px $main-font;
   color: #fff;
 }
@@ -19,7 +19,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  background: rgba(37, 56, 96, 0.8);
+  background: rgba(37, 56, 96, 0.95);
   h1 {
     margin: 0;
     font-weight: 700;
@@ -32,10 +32,6 @@ header {
     display: flex;
     column-gap: 15px;
   }
-}
-
-main {
-  height: 120vh;
 }
 
 footer {

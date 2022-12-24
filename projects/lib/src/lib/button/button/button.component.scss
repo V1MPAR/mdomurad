@@ -1,0 +1,38 @@
+@import '../../../../../app/src/styles';
+
+:host {
+  display: inline-block;
+
+  &::ng-deep {
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 30px;
+      background: $accent;
+      color: #fff;
+      height: 40px;
+      width: fit-content;
+      font-size: 14px;
+      font-family: $main-font;
+      font-weight: 500;
+      outline: none;
+      border: none;
+      appearance: none;
+      -moz-appearance: none;
+      cursor: pointer;
+      transition: background .2s ease-in-out;
+
+      @media (hover: hover) {
+        &:hover {
+          background: darken($accent, 8%);
+        }
+      }
+
+      &.button-outline {
+        background: transparent;
+        border: 1px solid $accent;
+      }
+    }
+  }
+}
